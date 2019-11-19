@@ -5,11 +5,11 @@ Pastebin codes:
 Uy06wSeP - mob grinder turtle code
 
 turtle:
-front = mob grinder
+front = mob grinder,
 right = modem(wireless or ender)
 
 screen:
-right = monitor
-back = redstone transmitter(redstone signal to slaughter factory)
+right = monitor,
+back = redstone transmitter(redstone signal to slaughter factory),
 bottom = redstone transmitter(redstone signal to mob grinder)
 
