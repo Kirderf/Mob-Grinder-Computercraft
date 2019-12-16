@@ -11,7 +11,7 @@ while true do
        		turtle.drop()
     	end
 	end
-	if message == "enderman" then
+	elseif message == "enderman" then
     	turtle.select(3)
     	if turtle.suck() then
       	 	turtle.suck()
@@ -19,7 +19,7 @@ while true do
        		turtle.drop()
     	end
 	end
-	if message == "witch" then
+	elseif message == "witch" then
     	turtle.select(4)
     	if turtle.suck() then
       	 	turtle.suck()
@@ -27,7 +27,7 @@ while true do
        		turtle.drop()
     	end
 	end
-	if message == "creeper" then
+	elseif message == "creeper" then
     	turtle.select(5)
     	if turtle.suck() then
       	 	turtle.suck()
@@ -35,7 +35,7 @@ while true do
        		turtle.drop()
     	end
 	end
-	if message == "witherskeleton" then
+	elseif message == "witherskeleton" then
     	turtle.select(6)
     	if turtle.suck() then
       	 	turtle.suck()
@@ -43,7 +43,7 @@ while true do
        		turtle.drop()
     	end
 	end
-	if message == "pigman" then
+	elseif message == "pigman" then
     	turtle.select(7)
     	if turtle.suck() then
       	 	turtle.suck()
@@ -51,7 +51,7 @@ while true do
        		turtle.drop()
     	end
 	end
-	if message == "spider" then
+	elseif message == "spider" then
     	turtle.select(8)
     	if turtle.suck() then
       	 	turtle.suck()
@@ -59,13 +59,16 @@ while true do
        		turtle.drop()
     	end
 	end
-	if message == "reboot" then
+	elseif message == "reboot" then
 		os.reboot()
 	end
-	if message == "clear" then
+	elseif message == "clear" then
 		if turtle.suck() then
 			modem.transmit(900,900,"mob spawner cleared")
 		end
 		turtle.suck()
+	end
+	else 
+		modem.transit(900,900,"Waiting for message")
 	end
 end
